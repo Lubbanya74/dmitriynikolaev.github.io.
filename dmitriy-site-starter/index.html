@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дмитрий — личная страница</title>
+  <meta name="description" content="Личная страница Дмитрия: проекты, контакты и ссылки." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/avatar.svg" alt="Аватар Дмитрия" class="avatar" />
+      <h1>Привет, я Дмитрий</h1>
+      <p class="tagline">Делаю проекты и учусь веб‑разработке</p>
+      <nav class="cta">
+        <a href="#about" class="btn">Обо мне</a>
+        <a href="#contacts" class="btn btn-outline">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>Обо мне</h2>
+      <p>
+        Коротко о себе: чем занимаюсь, какая специализация и чем могу быть полезен.
+        Здесь можно добавить 2–3 предложения. Этот текст легко заменить в редакторе.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Проекты</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>Люббаня</h3>
+          <p>Короткое описание проекта. Ссылка добавляется ниже.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Перейти →</a>
+        </li>
+        <li class="card">
+          <h3>Взлетай Тур</h3>
+          <p>Короткий текст про направление, услуги или кейсы.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Перейти →</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacts" class="section">
+      <h2>Контакты</h2>
+      <ul class="contact-list">
+        <li><strong>Telegram:</strong> <a href="https://t.me/username" target="_blank" rel="noopener">@username</a></li>
+        <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/dmitriynikolaev" target="_blank" rel="noopener">dmitriynikolaev</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Дмитрий. Сделано с любовью и HTML/CSS.</small>
+  </footer>
+
+  <script>
+    // обновляем год в подвале
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

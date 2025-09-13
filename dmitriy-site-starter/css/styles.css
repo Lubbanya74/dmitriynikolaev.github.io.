@@ -1,0 +1,67 @@
+/* Минималистичный, аккуратный стиль */
+* { box-sizing: border-box; }
+:root {
+  --bg: #0f172a;        /* тёмный синий фон хедера */
+  --text: #0b1220;      /* тёмный текст */
+  --muted: #55617a;     /* приглушённый текст */
+  --card: #ffffff;      /* фон карточек */
+  --accent: #2563eb;    /* синий акцент */
+  --accent-ghost: rgba(37, 99, 235, 0.15);
+  --maxw: 1000px;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: #f6f8fb;
+}
+
+.hero {
+  background: radial-gradient(1000px 400px at 50% -20%, #1e293b, var(--bg));
+  color: #e5edff;
+  padding: 56px 16px 36px;
+  text-align: center;
+}
+.hero-inner { max-width: var(--maxw); margin: 0 auto; }
+.avatar {
+  width: 96px; height: 96px; border-radius: 50%; display: block; margin: 0 auto 12px;
+  background: #fff;
+}
+h1 { margin: 8px 0 4px; font-size: 32px; line-height: 1.2; }
+.tagline { margin: 0 0 16px; color: #c7d2fe; }
+.cta { display: inline-flex; gap: 12px; }
+.btn {
+  display: inline-block; padding: 10px 16px; border-radius: 10px;
+  background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+}
+.btn:hover { transform: translateY(-1px); transition: 0.15s ease; }
+.btn-outline {
+  background: transparent; border: 1px solid #7ea6ff; color: #dbeafe;
+}
+
+main { max-width: var(--maxw); margin: 0 auto; padding: 24px 16px 40px; }
+.section { margin-top: 28px; }
+.section h2 { font-size: 22px; margin: 0 0 12px; }
+
+.cards {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;
+}
+.card {
+  background: var(--card); border-radius: 14px; padding: 16px;
+  box-shadow: 0 2px 10px rgba(2, 6, 23, 0.06);
+}
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0 0 10px; color: var(--muted); }
+.link { color: var(--accent); text-decoration: none; font-weight: 600; }
+.link:hover { text-decoration: underline; }
+
+.contact-list { list-style: none; padding: 0; margin: 0; }
+.contact-list li { margin: 6px 0; }
+
+.footer {
+  text-align: center; padding: 20px; color: #6b7280; background: transparent;
+}
